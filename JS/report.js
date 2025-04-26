@@ -8,31 +8,31 @@ function validateForm() {
 
     errorMsg.textContent = '';
 
-    // 1. Username should not be empty and at least 3 characters
+    // 1. Username
     if (username === '' || username.length < 3) {
         errorMsg.textContent = 'Username must be at least 3 characters.';
         return false;
     }
 
-    // 2. Email must contain "@" and "."
+    // 2. Email
     if (!email.includes('@') || !email.includes('.')) {
         errorMsg.textContent = 'Please enter a valid email.';
         return false;
     }
 
-    // 3. Server must be selected
+    // 3. Server
     if (server === '') {
         errorMsg.textContent = 'Please select a server.';
         return false;
     }
 
-    // 4. Description should be at least 10 characters
+    // 4. Description
     if (description.length < 10) {
         errorMsg.textContent = 'Description must be at least 10 characters.';
         return false;
     }
 
-    // 5. Consent checkbox must be checked
+    // 5. Checkbox
     if (!consent) {
         errorMsg.textContent = 'You must agree to the privacy policy';
         return false;

@@ -11,7 +11,6 @@
 	background-repeat: repeat;
 }
 
-/* Main */
 
 .main {
 	grid-area: content;
@@ -201,7 +200,6 @@
 	height: auto;
 }
 
-/* Overwrite agent 02 */
 #agent-02 .agent-role {
 	top: 50%;
 	width: 50%;
@@ -244,7 +242,6 @@
 	pointer-events: auto;
 }
 
-/* Area khusus */
 #agent-00 {
 	grid-area: a;
 }
@@ -266,8 +263,8 @@
 	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
-	color: #dc2f2f; /* Warna teks yang lebih cerah */
-	border-bottom: 3px solid #dc2f2f; /* Strip bawah yang memberikan aksen */
+	color: #dc2f2f;
+	border-bottom: 3px solid #dc2f2f;
 	padding: 8px 16px;
 	margin-top: 20px;
 	display: none;
@@ -305,7 +302,7 @@
 }
 
 .other-agents-label {
-	display: none; /* default: sembunyi di desktop */
+	display: none;
 	align-items: center;
 	justify-content: center;
 	grid-area: label;
@@ -329,7 +326,6 @@
 	color: inherit;
 }
 
-/* Layout untuk tablet: 768px ke bawah */
 @media (max-width: 768px) {
 	.agent-grid {
 		grid-template-columns: repeat(2, 1fr);
@@ -371,7 +367,6 @@
 	}
 }
 
-/* Layout untuk HP: 480px ke bawah */
 @media (max-width: 480px) {
 	.agent-grid {
 		grid-template-columns: 1fr;

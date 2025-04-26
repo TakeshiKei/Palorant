@@ -14,7 +14,7 @@ descriptionBtn.addEventListener('click', () => {
 
 // Sembunyikan pop-up saat tombol Close ditekan
 closePopup.addEventListener('click', () => {
-    popup.style.display = 'none'; // Sembunyikan pop-up
+    popup.style.display = 'none';
 });
 
 document.addEventListener("DOMContentLoaded", function () {
