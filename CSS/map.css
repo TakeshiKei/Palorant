@@ -1,0 +1,249 @@
+.container {
+	display: grid;
+	grid-template-rows: 80px auto auto;
+	grid-template-areas:
+		"nav"
+		"main"
+		"footer";
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("../Images/background4.png");
+	background-repeat: repeat;
+}
+
+.main {
+	grid-area: main;
+	margin: 30px;
+}
+
+.main h1 {
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-family: valorant;
+	text-shadow: 0 0 5px #dc2f2f, 0 0 5px #dc2f2f;
+	animation: glow 1s ease-in-out infinite alternate;
+	animation-delay: 0.5s;
+}
+
+@keyframes glow {
+	0% {
+		text-shadow: 0 0 5px #dc2f2f, 0 0 5px #dc2f2f;
+	}
+	100% {
+		text-shadow: 0 0 10px #ff4655, 0 0 20px #ff4655;
+	}
+}
+
+.map-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2rem;
+}
+
+.map-card {
+	background-color: #1a1a1a;
+	border: 2px solid #ff4d4d;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 0 0 15px #ff4d4daa;
+	transition: transform 0.3s ease;
+	cursor: pointer;
+}
+
+.map-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 25px #ff4d4d;
+}
+
+.map-card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	opacity: 0.95;
+}
+
+.map-info {
+	padding: 1rem;
+}
+
+.map-name {
+	font-size: 1.5rem;
+	color: #ff4d4d;
+	margin-bottom: 0.5rem;
+	font-family: montserrat-semibold;
+}
+
+.map-desc {
+	font-size: 0.9rem;
+	color: #ccc;
+	font-family: montserrat-regular;
+}
+
+.tags {
+	margin-top: 0.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.3rem;
+	font-family: montserrat-regular;
+}
+
+.tag {
+	background-color: #ff4d4d33;
+	color: #ff4d4d;
+	font-size: 0.7rem;
+	padding: 2px 6px;
+	border-radius: 5px;
+	border: 1px solid #ff4d4daa;
+}
+
+/* Popup full screen container */
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.95);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	padding: 2rem;
+	transition: opacity 0.3s ease;
+	font-family: montserrat-regular;
+}
+
+/* Show & hide classes */
+#popup.show {
+	display: flex;
+	opacity: 1;
+}
+
+#popup.hide {
+	display: none;
+	opacity: 0;
+}
+
+.popup-content {
+	background-color: #1e1e1e;
+	border-radius: 12px;
+	padding: 2rem;
+	position: relative;
+	width: 90%;
+	max-width: 1000px; /* Dulu 700px, sekarang lebih besar */
+	box-shadow: 0 0 25px rgba(255, 77, 77, 0.6);
+	text-align: center;
+	color: #fff;
+}
+
+/* Gambar di dalam popup lebih tinggi */
+.popup-content img {
+	width: 100%;
+	height: auto;
+	max-height: 65vh; /* Naikkan dari 50vh */
+	object-fit:contain;
+	border: 2px solid #ff4d4d;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+}
+
+/* Ukuran teks deskripsi sedikit dibesarkan */
+.popup-desc {
+	font-size: 1.15rem;
+	line-height: 1.7;
+	color: #ccc;
+	margin-bottom: 1.5rem;
+}
+
+/* Nav buttons (next/prev) */
+.popup-nav-btn {
+	background-color: #ff4d4d;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	margin: 0 10px;
+	font-size: 1rem;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.popup-nav-btn:hover {
+	background-color: #ff1a1a;
+}
+
+
+@keyframes fadeInScale {
+	0% {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeOutScale {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+}
+
+.popup.show {
+	display: flex;
+	animation: fadeInScale 0.4s ease forwards;
+}
+
+.popup.hide {
+	animation: fadeOutScale 0.3s ease forwards;
+}
+
+@media (max-width: 768px) {
+	.map-grid {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+	.map-card img {
+		height: 150px;
+	}
+	.map-name {
+		font-size: 1.2rem;
+	}
+	.map-desc {
+		font-size: 0.8rem;
+	}
+	.popup-content {
+		padding: 1rem;
+	}
+	.popup-desc {
+		font-size: 1rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.map-card img {
+		height: 120px;
+	}
+	.map-name {
+		font-size: 1rem;
+	}
+	.map-desc {
+		font-size: 0.7rem;
+	}
+	.popup-content {
+		padding: 0.5rem;
+	}
+	.popup-desc {
+		font-size: 0.9rem;
+	}
+}

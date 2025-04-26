@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: valorant;
+	src: url("../Font/Valorant\ Font.ttf");
+}
+
+@font-face {
+	font-family: montserrat-black;
+	src: url("../Font/Montserrat-Black.ttf");
+}
+
+@font-face {
+	font-family: montserrat-regular;
+	src: url("../Font/Montserrat-Regular.ttf");
+}
+
+@font-face {
+	font-family: montserrat-medium;
+	src: url("../Font/Montserrat-Medium.ttf");
+}
+
+@font-face {
+	font-family: montserrat-semibold;
+	src: url("../Font/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+	font-family: montserrat-bold;
+	src: url("../Font/Montserrat-Bold.ttf");
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #740000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #3e3e3e;
+}

@@ -1,0 +1,90 @@
+.container {
+	display: grid;
+	grid-template-rows: 80px auto auto;
+	grid-template-areas:
+		"nav"
+		"main"
+		"footer";
+	height: auto;
+	width: 100%;
+	overflow: hidden;
+	background-image: url("../Images/background4.png");
+	background-repeat: repeat;
+	font-family: montserrat-regular;
+}
+
+.main {
+	grid-area: main;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	flex-direction: column;
+	margin: 30px;
+}
+
+.report-container {
+	background-color: #1c1c1c;
+	padding: 30px;
+	border-radius: 16px;
+	max-width: 600px;
+	width: 100%;
+	box-shadow: 0 0 20px #ff4655;
+	color: white;
+}
+
+h1 {
+	text-align: center;
+	color: #ff4655;
+	margin-bottom: 30px;
+	font-family: montserrat-bold;
+}
+
+.form-group {
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+input, textarea, select {
+	padding: 10px;
+	border: none;
+	border-radius: 8px;
+	background-color: #2c2c2c;
+	color: white;
+}
+
+input:focus, textarea:focus, select:focus {
+	outline: none;
+	box-shadow: 0 0 5px #ff4655;
+}
+
+.checkbox {
+	flex-direction: row;
+	align-items: center;
+}
+
+button {
+	background-color: #ff4655;
+	color: white;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: transform 0.2s ease;
+	width: 100%;
+	font-family: montserrat-regular;
+}
+
+button:hover {
+	transform: scale(1.05);
+	background-color: #e03b4e;
+}
+
+#error-msg {
+	color: #ffb300;
+	font-size: 14px;
+	margin-top: 10px;
+	text-align: center;
+}

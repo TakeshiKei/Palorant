@@ -1,0 +1,200 @@
+/* Navbar & Hamburger */
+
+.navbar {
+	grid-area: nav;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	background: black;
+	position: fixed;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: montserrat-black;
+}
+
+.navbar .logo {
+	font-size: 24px;
+	color: white;
+	text-decoration: none;
+	margin-right: auto;
+}
+
+.navbar .logo img {
+	width: 100%;
+	height: 50px;
+}
+
+.music-control {
+	margin-right: 15px; /* Spasi antara kontrol musik dan hamburger */
+}
+
+.content {
+	display: flex; /* Tampilkan tautan secara horizontal */
+	flex-direction: row; /* Tumpuk tautan secara horizontal */
+	align-items: center; /* Pusatkan item secara horizontal */
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.content a {
+	margin: 0 30px;
+	color: white;
+	text-decoration: none;
+	overflow: hidden;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 25px;
+}
+
+.content a:hover {
+	color: red;
+	text-decoration: underline;
+	transform: scale(1.1);
+	transition: transform 0.3s ease;
+}
+
+/* Sidebar */
+.sidebar {
+	position: fixed;
+	top: 60px;
+	right: 0;
+	width: 250px;
+	height: calc(100% - 70px);
+	background: linear-gradient(to bottom, #0f0f0f, #1a1a1a); /* Gradien gelap */
+	box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5); /* Bayangan di pinggir kiri */
+	backdrop-filter: blur(5px); /* Efek blur halus */
+	text-align: left;
+	font-size: 22px;
+	transform: translateX(100%);
+	transition: transform 0.4s ease, background 0.3s ease;
+	z-index: 9998;
+	font-family: 'montserrat-semibold', sans-serif;
+	border-left: 2px solid #8e1616; /* Garis merah di kiri sidebar */
+}
+
+/* Sidebar ketika terbuka */
+.sidebar.open {
+	transform: translateX(0);
+}
+
+/* List di Sidebar */
+.sidebar ul {
+	list-style: none;
+	padding: 20px;
+	margin: 0;
+}
+
+/* Item List */
+.sidebar li {
+	margin-bottom: 15px;
+}
+
+/* Hover & Active */
+.sidebar li:hover,
+.sidebar li.active {
+	background: #8e1616; /* Warna merah saat hover atau active */
+	border-radius: 8px;
+	transition: background 0.3s, transform 0.3s;
+	transform: scale(1.05);
+}
+
+/* Link di Sidebar */
+.sidebar li a {
+	color: white;
+	text-decoration: none;
+	padding: 12px 20px;
+	display: block;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+/* Efek tambahan: saat klik, muncul efek tekanan */
+.sidebar li:active {
+	transform: scale(0.95);
+}
+
+
+/* Hamburger Menu */
+.toggler-navbar {
+	margin-left: auto; /* Memastikan hamburger berada di sebelah kanan */
+	display: none; /* Sembunyikan hamburger di desktop */
+}
+
+.hamburger-menu {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+.hamburger-menu span {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: white;
+	border-radius: 9px;
+	left: 0;
+	transition: 0.25s ease-in-out;
+}
+
+.hamburger-menu span:nth-child(1) {
+	top: 2.5px;
+}
+
+.hamburger-menu span:nth-child(2) {
+	top: 11px;
+}
+
+.hamburger-menu span:nth-child(3) {
+	top: 21px;
+}
+
+.hamburger-menu.open span:nth-child(1) {
+	top: 15px;
+	transform: rotate(135deg);
+}
+
+.hamburger-menu.open span:nth-child(2) {
+	opacity: 0;
+	left: -60px;
+}
+
+.hamburger-menu.open span:nth-child(3) {
+	top: 14px;
+	transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+}
+
+@media screen and (max-width: 768px) {
+	.content {
+		display: none; /* Sembunyikan tautan navbar di mobile */
+	}
+
+	.sidebar {
+		display: block; /* Tampilkan sidebar */
+		margin-top: 20px; /* Jarak dari navbar */
+	}
+
+	.sidebar.open {
+		display: block; /* Tampilkan sidebar saat terbuka */
+	}
+
+	.toggler-navbar {
+		display: block;
+	}
+
+	.navbar .logo img {
+		width: auto;
+		height: 50px;
+	}
+
+	.music-control {
+		display: none;
+	}
+}
