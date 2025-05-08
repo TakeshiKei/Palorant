@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const audio = document.getElementById("background-audio");
     const musicToggle = document.getElementById("music-toggle");
 
-    // Event listener untuk toggle musik
     musicToggle.addEventListener("click", () => {
         if (audio.paused) {
             audio.play().catch(() => {
