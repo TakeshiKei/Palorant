@@ -359,11 +359,14 @@
 	}
 
 	#agent-02 .agent-highlight-name {
-		font-size: 4rem;
+		font-size: 6rem;
 	}
 
 	.agent-highlight-name {
 		font-size: 3rem;
+	}
+	.agent-role{
+		width: 30%;
 	}
 }
 
@@ -383,7 +386,7 @@
 	}
 
 	.agent-card {
-		min-height: 200px;
+		min-height: 250px;
 	}
 
 	#agent-02 {

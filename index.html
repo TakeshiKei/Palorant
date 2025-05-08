@@ -1,232 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palorant</title>
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="CSS/global.css">
-    <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/navbar.css">
-    <link rel="icon" type="image/x-icon" href="Images/logo.ico">
-</head>
-    <audio id="background-audio" src="Audios/backsound.mp3"></audio>
-    <div class="container">
-        <!-- Navbar -->
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="Images/logo1.png" width="300px" height="80px" alt="Logo">
-                </a>
-            </div>
-            <div class="content" id="nav-links">
-                <a href="index.html">Home</a>
-                <a href="agent.html">Agents</a>
-                <a href="map.html">Maps</a>
-                <a href="news.html">News</a>
-                <a href="report.html">Report</a>
-            </div>
-            <div class="music-control">
-                <img id="music-toggle" src="Images/music-off.png" alt="music control" width="40px" height="40px">
-            </div>
-            <div class="toggler-navbar">
-                <div class="hamburger-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </nav>
-        <div class="sidebar">
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="agent.html">Agents</a></li>
-                <li><a href="map.html">Maps</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="report.html">Report</a></li>
-            </ul>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Palorant</title>
+		<link rel="stylesheet" href="CSS/index.css" />
+		<link rel="stylesheet" href="CSS/global.css" />
+		<link rel="stylesheet" href="CSS/footer.css" />
+		<link rel="stylesheet" href="CSS/navbar.css" />
+		<link rel="icon" type="image/x-icon" href="Images/logo.ico" />
+	</head>
+	<body>
+		<audio id="background-audio" src="Audios/backsound.mp3"></audio>
+		<div class="container">
+			<!-- Navbar -->
+			<nav class="navbar">
+				<div class="logo">
+					<a href="index.html">
+						<img
+							src="Images/logo1.png"
+							width="300px"
+							height="80px"
+							alt="Logo" />
+					</a>
+				</div>
+				<div class="content" id="nav-links">
+					<a href="index.html">Home</a>
+					<a href="./Main/agent.html">Agents</a>
+					<a href="./Main/map.html">Maps</a>
+					<a href="./Main/news.html">News</a>
+					<a href="./Main/report.html">Report</a>
+				</div>
+				<div class="music-control">
+					<img
+						id="music-toggle"
+						src="Images/music-off.png"
+						alt="music control"
+						width="40px"
+						height="40px" />
+				</div>
+				<div class="toggler-navbar">
+					<div class="hamburger-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</nav>
+			<div class="sidebar">
+				<ul>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="./Main/agent.html">Agents</a></li>
+					<li><a href="./Main/map.html">Maps</a></li>
+					<li><a href="./Main/news.html">News</a></li>
+					<li><a href="./Main/report.html">Report</a></li>
+				</ul>
+			</div>
 
-        <!-- Main -->
-        <div class="main">
-            <div class="mainImage">
-                
-            </div>
-            <div class="main-text">
-                <div class="text">
-                    <img src="Images/Text.png" alt="">
-                </div>
-                <button id="btn">Description</button>
-            </div>
-            <div class="main-description">
-                <h1>Great FPS Combat Awaits For You</h1>
-            </div>
-            <div id="popup">
-                <div class="popup-content">
-                    <h2>Palorant: MOBA FPS</h2>
-                    <p>
-                        Palorant is a high-stakes tactical first-person shooter developed by Giot Games. It features intense
-                        gunplay combined with unique abilities from agents. Set in a world of fast-paced competition, players must
-                        strategize and work together to secure victory.
-                    </p>
-                    <button id="closePopup">Close</button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Agent -->
-        <div class="agent">
-            <img src="Images/Agents.png">
-            <div class="card-container">
-            <!-- Jett -->
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="front">
-                            <img src="Images/Jett.png" alt="" width="200px" height="200px">
-                            <h3>Jett</h3>
-                            <p>Duelist</p>
-                        </div>
-                        <div class="back">
-                            <h3>Jett</h3>
-                            <p>Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can.</p>
-                        </div>
-                    </div>
-                </div>
+			<!-- Main -->
+			<div class="main">
+				<div class="mainImage"></div>
+				<div class="main-text">
+					<div class="text">
+						<img src="Images/Text.png" alt="" />
+					</div>
+					<button id="btn">Description</button>
+				</div>
+				<div class="main-description">
+					<h1>Great FPS Combat Awaits For You</h1>
+				</div>
+				<div id="popup">
+					<div class="popup-content">
+						<h2>Palorant: MOBA FPS</h2>
+						<p>
+							Palorant is a high-stakes tactical first-person shooter developed
+							by Giot Games. It features intense gunplay combined with unique
+							abilities from agents. Set in a world of fast-paced competition,
+							players must strategize and work together to secure victory.
+						</p>
+						<button id="closePopup">Close</button>
+					</div>
+				</div>
+			</div>
 
-                <!-- Phoenix -->
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="front">
-                            <img src="Images/Phoenix.png" alt="" width="200px" height="200px">
-                            <h3>Phoenix</h3>
-                            <p>Duelist</p>
-                        </div>
-                        <div class="back">
-                            <h3>Phoenix</h3>
-                            <p>Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare.</p>
-                        </div>
-                    </div>
-                </div>
+			<!-- Agent -->
+			<div class="agent">
+				<img src="Images/Agents.png" />
+				<div class="card-container">
+					<!-- Jett -->
+					<div class="card">
+						<div class="card-inner">
+							<div class="front">
+								<img
+									src="Images/Jett.png"
+									alt=""
+									width="200px"
+									height="200px" />
+								<h3>Jett</h3>
+								<p>Duelist</p>
+							</div>
+							<div class="back">
+								<h3>Jett</h3>
+								<p>
+									Representing her home country of South Korea, Jett's agile and
+									evasive fighting style lets her take risks no one else can.
+								</p>
+							</div>
+						</div>
+					</div>
 
-                <!-- Omen -->
-                <div class="card">
-                    <div class="card-inner">
-                        <div class="front">
-                            <img src="Images/Omen.png" alt="" width="200px" height="200px">
-                            <h3>Omen</h3>
-                            <p>Controller</p>
-                        </div>
-                        <div class="back">
-                            <h3>Omen</h3>
-                            <p>A phantom of a memory, Omen hunts in the shadows. He renders enemies blind, teleports across the field, then lets paranoia take hold.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="seeAgent">
-                <a href="agent.html"><button class="redirect">See all agents</button></a>
-            </div>
-        </div>
+					<!-- Phoenix -->
+					<div class="card">
+						<div class="card-inner">
+							<div class="front">
+								<img
+									src="Images/Phoenix.png"
+									alt=""
+									width="200px"
+									height="200px" />
+								<h3>Phoenix</h3>
+								<p>Duelist</p>
+							</div>
+							<div class="back">
+								<h3>Phoenix</h3>
+								<p>
+									Hailing from the U.K., Phoenix's star power shines through in
+									his fighting style, igniting the battlefield with flash and
+									flare.
+								</p>
+							</div>
+						</div>
+					</div>
 
-        <!-- Map -->
-        <div class="map">
-            <div class="logo-map">
-                <img src="Images/Maps.png">
-            </div>
-            <div class="containerSlide">
-                <div class="mySlides">
-                    <div class="numbertext">1 / 6</div>
-                    <img src="Images/Maps/drift.png">
-                </div>
+					<!-- Omen -->
+					<div class="card">
+						<div class="card-inner">
+							<div class="front">
+								<img
+									src="Images/Omen.png"
+									alt=""
+									width="200px"
+									height="200px" />
+								<h3>Omen</h3>
+								<p>Controller</p>
+							</div>
+							<div class="back">
+								<h3>Omen</h3>
+								<p>
+									A phantom of a memory, Omen hunts in the shadows. He renders
+									enemies blind, teleports across the field, then lets paranoia
+									take hold.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="seeAgent">
+					<a href="agent.html"
+						><button class="redirect">See all agents</button></a
+					>
+				</div>
+			</div>
 
-                <div class="mySlides">
-                    <div class="numbertext">2 / 6</div>
-                    <img src="Images/Maps/kasbah.png">
-                </div>
+			<!-- Map -->
+			<div class="map">
+				<div class="logo-map">
+					<img src="Images/Maps.png" />
+				</div>
+				<div class="containerSlide">
+					<div class="mySlides">
+						<img src="Images/Maps/drift.png" />
+					</div>
 
-                <div class="mySlides">
-                    <div class="numbertext">3 / 6</div>
-                    <img src="Images/Maps/glitch.png">
-                </div>
-                    
-                <div class="mySlides">
-                    <div class="numbertext">4 / 6</div>
-                    <img src="Images/Maps/bind.png">
-                </div>
+					<div class="mySlides">
+						<img src="Images/Maps/kasbah.png" />
+					</div>
 
-                <div class="mySlides">
-                    <div class="numbertext">5 / 6</div>
-                    <img src="Images/Maps/haven.png">
-                </div>
-                    
-                <div class="mySlides">
-                    <div class="numbertext">6 / 6</div>
-                    <img src="Images/Maps/split.png">
-                </div>
-                    
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
+					<div class="mySlides">
+						<img src="Images/Maps/glitch.png" />
+					</div>
 
-                <div class="caption-container">
-                    <p id="caption"></p>
-                </div>
+					<div class="mySlides">
+						<img src="Images/Maps/bind.png" />
+					</div>
 
-                <div class="row">
-                    <div class="column">
-                    <img class="demo cursor" src="Images/Maps/drift.png" onclick="currentSlide(1)" alt="The Woods">
-                    </div>
-                    <div class="column">
-                    <img class="demo cursor" src="Images/Maps/kasbah.png" onclick="currentSlide(2)" alt="Cinque Terre">
-                    </div>
-                    <div class="column">
-                    <img class="demo cursor" src="Images/Maps/glitch.png" onclick="currentSlide(3)" alt="Mountains and fjords">
-                    </div>
-                    <div class="column">
-                    <img class="demo cursor" src="Images/Maps/bind.png" onclick="currentSlide(4)" alt="Northern Lights">
-                    </div>
-                    <div class="column">
-                    <img class="demo cursor" src="Images/Maps/haven.png" onclick="currentSlide(5)" alt="Nature and sunrise">
-                    </div>    
-                    <div class="column">
-                    <img class="demo cursor" src="Images/Maps/split.png" onclick="currentSlide(6)" alt="Snowy Mountains">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="footer-row">
-                    <div class="footer-col giot">
-                        <h2>Palorant</h2>
-                        <img src="Images/giotgames.png">
-                    </div>
-                    <div class="footer-col">
-                        <h4>Navigation</h4>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="agent.html">Agents</a></li>
-                            <li><a href="map.html">Maps</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="report.html">Report</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="https://www.instagram.com/valorant/"><img src="Images/instagram.png" alt="ig"></a>
-                            <a href="https://www.facebook.com/VALORANTid/?brand_redir=103808897687593&locale=id_ID"><img src="Images/facebook.png" alt="fb"></a>
-                            <a href="https://discord.gg/valorant"><img src="Images/discord.png" alt=""></a>
-                            <a href="https://www.youtube.com/@valorant"><img src="Images/youtube.png" alt=""></a>
-                        </div>
-                        <p>&copyCopyright 2025 Palorant by Giot Games</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+					<div class="mySlides">
+						<img src="Images/Maps/haven.png" />
+					</div>
 
-    <script src="JS/global.js"></script>
-    <script src="JS/index.js"></script>
-</body>
+					<div class="mySlides">
+						<img src="Images/Maps/split.png" />
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+					<div class="row">
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="Images/Maps/drift.png"
+								onclick="currentSlide(1)" />
+						</div>
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="Images/Maps/kasbah.png"
+								onclick="currentSlide(2)" />
+						</div>
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="Images/Maps/glitch.png"
+								onclick="currentSlide(3)" />
+						</div>
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="Images/Maps/bind.png"
+								onclick="currentSlide(4)" />
+						</div>
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="Images/Maps/haven.png"
+								onclick="currentSlide(5)" />
+						</div>
+						<div class="column">
+							<img
+								class="demo cursor"
+								src="Images/Maps/split.png"
+								onclick="currentSlide(6)" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="footer-container">
+					<div class="footer-row">
+						<div class="footer-col giot">
+							<h2>Palorant</h2>
+							<img src="Images/giotgames.png" />
+						</div>
+						<div class="footer-col">
+							<h4>Navigation</h4>
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="./Main/agent.html">Agents</a></li>
+								<li><a href="./Main/map.html">Maps</a></li>
+								<li><a href="./Main/news.html">News</a></li>
+								<li><a href="./Main/report.html">Report</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>follow us</h4>
+							<div class="social-links">
+								<a href="https://www.instagram.com/valorant/"
+									><img src="Images/instagram.png" alt="ig"
+								/></a>
+								<a
+									href="https://www.facebook.com/VALORANTid/?brand_redir=103808897687593&locale=id_ID"
+									><img src="Images/facebook.png" alt="fb"
+								/></a>
+								<a href="https://discord.gg/valorant"
+									><img src="Images/discord.png" alt=""
+								/></a>
+								<a href="https://www.youtube.com/@valorant"
+									><img src="Images/youtube.png" alt=""
+								/></a>
+							</div>
+							<p>&copyCopyright 2025 Palorant by Giot Games</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script src="JS/global.js"></script>
+		<script src="JS/index.js"></script>
+	</body>
 </html>

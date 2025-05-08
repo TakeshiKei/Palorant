@@ -1,61 +1,61 @@
 const mapsData = [{
         name: "Sunset",
-        img: "./Images/Maps/sunset.png",
+        img: "../Images/Maps/sunset.png",
         desc: "Set in a Los Angeles-inspired cityscape at dusk, Sunset features tight chokepoints and mid control as the key to victory. A classic two-site map with a fresh aesthetic.",
         tags: ["Two Sites", "Mid Control", "Cityscape"],
         gallery: [
-            "./Images/Maps/sunset.png",
-            "./Images/Maps/sunset-map.png"
+            "../Images/Maps/sunset.png",
+            "../Images/Maps/sunset-map.png"
         ]
     },
     {
         name: "Bind",
-        img: "./Images/Maps/bind.png",
+        img: "../Images/Maps/bind.png",
         desc: "A teleport-heavy layout with no mid lane. Bind encourages fast site switches and unpredictable flanks through its unique one-way teleporters.",
         tags: ["Teleporters", "No Mid", "Fast Rotations"],
         gallery: [
-            "./Images/Maps/bind.png",
-            "./Images/Maps/bind-map.png"
+            "../Images/Maps/bind.png",
+            "../Images/Maps/bind-map.png"
         ]
     },
     {
         name: "Ascent",
-        img: "./Images/Maps/ascent.png",
+        img: "../Images/Maps/ascent.png",
         desc: "A Venice-inspired map with a large open mid area that dominates control. Ascent rewards map awareness and strong mid-holds.",
         tags: ["Open Mid", "Two Sites", "Control-Based"],
         gallery: [
-            "./Images/Maps/ascent.png",
-            "./Images/Maps/ascent-map.png"
+            "../Images/Maps/ascent.png",
+            "../Images/Maps/ascent-map.png"
         ]
     },
     {
         name: "Lotus",
-        img: "./Images/Maps/lotus.png",
+        img: "../Images/Maps/lotus.png",
         desc: "An ancient structure deep in the Western Ghats. Lotus introduces rotating doors and three sites, demanding adaptive strategies and multi-site pressure.",
         tags: ["Three Sites", "Rotating Doors", "Flexible Attack"],
         gallery: [
-            "./Images/Maps/lotus.png",
-            "./Images/Maps/lotus-map.png"
+            "../Images/Maps/lotus.png",
+            "../Images/Maps/lotus-map.png"
         ]
     },
     {
         name: "Haven",
-        img: "./Images/Maps/haven.png",
+        img: "../Images/Maps/haven.png",
         desc: "Known for being the only map with three bomb sites, Haven challenges defenders with its expansive layout and fast-paced rotations.",
         tags: ["Three Sites", "Wide Layout", "High Mobility"],
         gallery: [
-            "./Images/Maps/haven.png",
-            "./Images/Maps/haven-map.png"
+            "../Images/Maps/haven.png",
+            "../Images/Maps/haven-map.png"
         ]
     },
     {
         name: "Split",
-        img: "./Images/Maps/split.png",
+        img: "../Images/Maps/split.png",
         desc: "A densely built map with vertical ropes and narrow lanes. Split rewards teams with sharp coordination and control over tight spaces.",
         tags: ["Verticality", "Narrow Chokes", "Rope Plays"],
         gallery: [
-            "./Images/Maps/split.png",
-            "./Images/Maps/split-map.png"
+            "../Images/Maps/split.png",
+            "../Images/Maps/split-map.png"
         ]
     }
 ];
