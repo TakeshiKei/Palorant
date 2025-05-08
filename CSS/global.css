@@ -53,3 +53,7 @@
 ::-webkit-scrollbar-thumb:hover {
 	background: #3e3e3e;
 }
+
+#music-toggle{
+	cursor: pointer;
+}
