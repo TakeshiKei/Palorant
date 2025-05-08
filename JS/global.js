@@ -6,12 +6,12 @@ document.addEventListener("DOMContentLoaded", () => {
     musicToggle.addEventListener("click", () => {
         if (audio.paused) {
             audio.play().catch(() => {
-                alert("Audio tidak bisa diputar otomatis. Klik untuk mengizinkan.");
+                alert("Can't play audio");
             });
-            musicToggle.src = ""; // Ubah ikon ke "musik hidup"
+            musicToggle.src = "../Images/music-on.png"; // Ubah ikon ke "musik hidup"
         } else {
             audio.pause();
-            musicToggle.src = ""; // Ubah ikon ke "musik mati"
+            musicToggle.src = "../Images/music-off.png"; // Ubah ikon ke "musik mati"
         }
     });
 });
